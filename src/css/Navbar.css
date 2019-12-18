@@ -1,0 +1,37 @@
+#navbar{
+    background-color: rgb(34, 33, 33);
+}
+
+/* 
+*padding for collapse
+
+#navbarSupportedContent{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+*/
+
+#navbarSupportedContent a{
+    color: white;
+    font-weight: bold;
+    margin: 0 0 0 10px;
+}
+
+
+#navbarSupportedContent a:hover{
+    color: rgb(237, 216, 56);
+}
+
+#navbarDropdown{
+    background-color: rgb(34, 33, 33);
+}
+
+/*Må endre til id per nav-item og dropdown-item for at dette sjal fungere
+#navbarSupportedContent .dropdown-item a{
+    color: black;
+}
+*/
+
+.dropdown-menu a:hover {
+    background-color: transparent;
+}

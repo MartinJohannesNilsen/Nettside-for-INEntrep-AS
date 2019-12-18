@@ -1,0 +1,71 @@
+#tjenesterContainer{
+    background-color: white;
+    width: 60%;
+    margin: auto;
+    min-height: 100vh;
+    text-align: center;
+}
+#tjenesterBilde{
+    width: 40%;
+    margin: 0 auto 0 30px;
+    padding: 45px 0 20px 0;
+}
+#tjenesterTittel{ 
+    color: black;
+    text-align: center;
+    margin: auto;
+    padding: 20px 20px 0 20px;
+}
+#tjenesterUnderstrek{
+    width: 10%;
+    height: 3px;
+    background-color:rgb(232, 202, 82);
+}
+#tjenesterInfo{
+    width: 70%;
+    margin: auto;   
+    padding: 20px 0 40px 0;
+    text-align: center;
+}
+#tjenesterInfo p{
+    font-size: 1.1em;
+}
+#tjenesterTekst{
+    padding: 10px 0 10px 0;
+}
+#tjenesterAvsnitt{
+    padding: 15px 0 25px 0;
+    margin: auto;
+}
+#tjenesterAvsnitt a{
+    color: black;
+}
+#tjenesterHr{
+    width: 15%;
+    margin: 5px auto 5px auto;
+}
+
+@Media only screen and (max-width: 1000px){
+    #tjenesterBilde{
+        width: 60%;
+        margin: 0 auto 0 40px;
+        padding: 20px 0 20px 0;
+    }
+}
+
+@Media only screen and (max-width: 640px){
+    #tjenesterContainer{
+        width: 80%;
+    }
+    #tjenesterBilde{
+        width: 60%;
+        margin: 0 auto 0 30px;
+        padding: 20px 0 10px 0;
+    }
+}
+
+@Media only screen and (max-width: 320px){
+    #tjenesterContainer{
+        width: 100%;
+    }
+}

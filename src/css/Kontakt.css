@@ -1,0 +1,70 @@
+#kontaktContainer{
+    background-color: white;
+    width: 60%;
+    margin: auto;
+    min-height: 100vh;
+    text-align: center;
+}
+#kontaktBilde{
+    width: 40%;
+    margin: 0 auto 0 30px;
+    padding: 45px 0 20px 0;
+}
+#kontaktTittel{ 
+    color: black;
+    text-align: center;
+    padding: 20px 20px 0 20px;
+}
+#kontaktUnderstrek{
+    width: 10%;
+    height: 3px;
+    background-color:rgb(232, 202, 82);
+}
+#kontaktInfo{
+    width: 70%;
+    margin: auto;   
+    padding: 20px 0 40px 0;
+    text-align: center;
+}
+#kontaktInfo p{
+    font-size: 1.1em;
+}
+#kontaktTekst{
+    padding: 10px 0 10px 0;
+}
+#kontaktAvsnitt{
+    padding: 15px 0 25px 0;
+    margin: auto;
+}
+#kontaktAvsnitt a{
+    color: black;
+}
+#kontaktHr{
+    width: 15%;
+    margin: 5px auto 5px auto;
+}
+
+@Media only screen and (max-width: 1000px){
+    #kontaktBilde{
+        width: 60%;
+        margin: 0 auto 0 40px;
+        padding: 20px 0 20px 0;
+    }
+}
+
+@Media only screen and (max-width: 640px){
+    #kontaktContainer{
+        width: 80%;
+    }
+    #kontaktBilde{
+        width: 60%;
+        margin: 0 auto 0 30px;
+        padding: 20px 0 10px 0;
+    }
+}
+
+@Media only screen and (max-width: 320px){
+    #kontaktContainer{
+        width: 100%;
+    }
+}

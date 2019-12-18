@@ -1,0 +1,28 @@
+#prosjektContainer{
+    width: 80%;
+    background-color: white;
+    margin: auto;
+    min-height: 100vh;
+}
+#prosjektBilde{
+    width: 100%;
+    margin: auto;
+}
+#prosjektNavnContainer{
+    padding: 20px 0 0 0;
+    text-align: center;
+}
+#prosjektTekstContainer{
+    width: 80%;
+    margin: auto;
+    padding: 50px 15px 80px 15px;
+}
+
+@Media only screen and (max-width: 800px){
+    #prosjektContainer{
+        width: 100%;
+    }
+    #prosjektTekstContainer{
+        padding: 30px 15px 40px 15px;
+    }
+}
