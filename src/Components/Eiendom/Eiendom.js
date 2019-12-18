@@ -8,7 +8,7 @@ class Eiendomside extends Component{
             <div id="eiendomContainer">
                 <img src={defaultImage} id="eiendomBilde"/>
                 <div id="eiendomNavnContainer">
-                    <h1>Ivar Nilsen Eiendom AS</h1>
+                    <h1>Ivar Nilsen Eiendom</h1>
                     <hr/>
                 </div>
                 <div id="eiendomTekstContainer">
