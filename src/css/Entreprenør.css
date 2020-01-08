@@ -1,3 +1,6 @@
+#EntreprenørContainer{
+    padding-top: 75px;
+}
 
 .introText{
     text-align: center;
@@ -136,24 +139,30 @@
 }
 #omOssContainer{
     width: 80%;
+    vertical-align: center;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
         "bilde tekst";
     padding: 10px 0 60px 0;
-    
 }
 #omOssBilde{
     grid-area: bilde;
-    width: 80%;
+    width: 300px;
     margin: auto;
     padding: 20px;
+    height: 400px;
 }
 #omOssTekst{
     grid-area: tekst;
     color: white;
     padding: 20px;
+    margin: auto;
+    font-style: italic;
+}
+#omOssTekst a {
+    margin-top: 10px;
 }
 
 
@@ -194,7 +203,7 @@
     }
 
     .prosjekterShowCards{
-        width: 100%;
+        width: 60%;
         grid-template-columns: 1fr;
         grid-template-areas: 
             "showCard1" 
@@ -244,8 +253,14 @@
         padding: 10px 0 20px 0;
     }
     #omOssTekst{
-        margin-top: 30px;
+        margin-top: 0px;
     }
-    
 
+
+}
+
+@media only screen and (max-width: 700px){
+    .prosjekterShowCards{
+        width: 90%;
+    }
 }

@@ -4,6 +4,7 @@
     margin: auto;
     min-height: 100vh;
     text-align: center;
+    padding-top: 75px;
 }
 #tjenesterBilde{
     width: 40%;

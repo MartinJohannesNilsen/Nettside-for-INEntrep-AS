@@ -1,16 +1,19 @@
 
 /*Alle bildene i bildekarusellen må ha en viss størrelse*/
 .carousel-inner{
-    object-fit: contain;
-    margin: auto;
+    /*margin: auto;
     position: center;
-    /*height: 50vw;*/
+    height: 50vw;*/
     height: 80vh;
     width: 100%;
 }
+.carousel-inner img {
+    object-fit: cover;
+    
+}
 
 #bildekarusellStreker li{
-    background-color: yellow;
+    background-color: rgb(232, 202, 82);
 }
 
 #ForsideKarusell{

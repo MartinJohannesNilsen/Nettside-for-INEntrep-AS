@@ -9,7 +9,6 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import '././css/index.css'
 import Navbar from '../src/Components/Navbar/Navbar'
 import ToTop from './Components/ToTop/ToTop'
-import Footer from './Components/Footer/Footer'
 
 import Entreprenør from '../src/Components/Entreprenør/Entreprenør';
 import Eiendom from '../src/Components/Eiendom/Eiendom';
@@ -21,7 +20,6 @@ import Kontakt from '../src/Components/Kontakt/Kontakt';
 ReactDOM.render(
     <HashRouter>
         <div class = "website">
-            <Navbar/>
             <Route exact path="/" component={Entreprenør} />
             <Route exact path="/entreprenør" component={Entreprenør} />
             <Route exact path="/eiendom" component={Eiendom} />
@@ -30,7 +28,6 @@ ReactDOM.render(
             <Route exact path="/tjenester" component={Tjenester} />
             <Route exact path="/kontakt" component={Kontakt} />
             <ToTop />
-            <Footer/>
         </div>
     </HashRouter>
     , (document.getElementById('root')));

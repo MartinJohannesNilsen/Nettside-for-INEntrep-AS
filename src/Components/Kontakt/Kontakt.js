@@ -1,18 +1,21 @@
 import React, {Component} from "react";
 import "../../css/Kontakt.css";
 import logoTransparent from '../../img/logo/logoTransparentSort.png'
+import Footer from '../Footer/Footer'
+import Navbar from '../Navbar/Navbar'
 
 class Kontakt extends Component{
     render(){
         return(
             <div>
+                <Navbar />
                 <div id="kontaktContainer">
                     <div id="kontaktTittel"> 
                         <h3>Kontakt oss</h3>
                         <hr id="kontaktUnderstrek"/>
                     </div>
                     <div id="kontaktInfo">
-                        <p id="kontaktTekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam sem et tortor consequat id. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue. Malesuada fames ac turpis egestas.</p>
+                        <p id="kontaktTekst">Ønsker du å vite om vi kan utføre tjenesten du ønsker å få gjort? Ta kontakt med oss for tilbud og referanser!</p>
                         <div id="kontaktAvsnitt">
                             <h6>Ivar Nilsen</h6>
                             <h7>Daglig leder</h7>
@@ -28,6 +31,7 @@ class Kontakt extends Component{
                         <img src={logoTransparent} id="kontaktBilde"/>
                     </div>
                 </div>
+                <Footer />
             </div>
         )
     }

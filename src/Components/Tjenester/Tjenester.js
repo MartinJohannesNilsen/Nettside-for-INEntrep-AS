@@ -1,11 +1,14 @@
 import React, {Component} from "react";
 import "../../css/Tjenester.css";
 import logoTransparent from '../../img/logo/logoTransparentSort.png'
+import Footer from '../Footer/Footer'
+import Navbar from '../Navbar/Navbar'
 
 class Tjenester extends Component{
     render(){
         return(
             <div>
+                <Navbar />
                 <div id="tjenesterContainer">
                     <div id="tjenesterTittel"> 
                         <h3>Tjenester</h3>
@@ -46,6 +49,7 @@ class Tjenester extends Component{
                         <img src={logoTransparent} id="tjenesterBilde"/>
                     </div>
                 </div>
+                <Footer />
             </div>
         )
     }

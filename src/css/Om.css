@@ -3,10 +3,14 @@
     background-color: white;
     margin: auto;
     min-height: 100vh;
+    padding-top: 75px;
 }
 #omBilde{
+    object-fit: cover;
+    position: center;
+    /*height: 50vw;*/
+    height: 80vh;
     width: 100%;
-    margin: auto;
 }
 #omNavnContainer{
     padding: 20px 0 0 0;

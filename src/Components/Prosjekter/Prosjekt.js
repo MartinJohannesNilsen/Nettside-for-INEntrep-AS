@@ -2,6 +2,8 @@ import React, {Component} from "react";
 import "../../css/Prosjekt.css";
 import defaultImage from "../../img/default/defaultImage.png";
 import nordby from "../../img/prosjekter/nordby.jpg";
+import Footer from '../Footer/Footer'
+import Navbar from '../Navbar/Navbar'
 
 class Prosjekt extends Component{
     prosjekt = {
@@ -22,28 +24,40 @@ class Prosjekt extends Component{
 
         ]
     }
+    state = {
+        id: this.props.match.params.id
+    }
+    
+
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+    componentDidUpdate(prevProps) {
+        if(this.props.match.params.id !== prevProps.match.params.id){
+            this.setState({id: this.props.match.params.id});
+        }    
+    }
 
     render(){
 
-        let id = this.props.match.params.id;
-
         return(
-            <div id="prosjektContainer">
-                <img src={this.prosjekt.img[id-1]} id="prosjektBilde"/>
-                <div id="prosjektNavnContainer">
-                    <h1>{this.prosjekt.navn[id-1]}</h1>
-                    <hr/>
+            <div>
+                <Navbar />
+                <div id="prosjektContainer">
+                    <img src={this.prosjekt.img[this.state.id-1]} id="prosjektBilde"/>
+                    <div id="prosjektNavnContainer">
+                        <h1>{this.prosjekt.navn[this.state.id-1]}</h1>
+                        <hr/>
+                    </div>
+                    <div id="prosjektTekstContainer">
+                        {this.prosjekt.innhold[this.state.id-1].split('\n').map(avsnitt => (
+                            <p>{avsnitt}</p>
+                        ))}
+                    </div>
                 </div>
-                <div id="prosjektTekstContainer">
-                    {this.prosjekt.innhold[id-1].split('\n').map(avsnitt => (
-                        <p>{avsnitt}</p>
-                    ))}
-                </div>
+                <Footer />
             </div>
         )
-    }
-    componentDidMount() {
-        window.scrollTo(0, 0)
     }
 }
 export default Prosjekt;

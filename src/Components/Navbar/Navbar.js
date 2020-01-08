@@ -6,6 +6,7 @@ import logoTransparentSort from "../../img/logo/logoTransparentSort.png"
 import logoTransparentHvit from "../../img/logo/logoTransparentHvit.png"
 
 class Navbar extends Component{
+    
     render() {
         return (
             <div>
@@ -17,22 +18,22 @@ class Navbar extends Component{
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#/Entreprenør">Ivar Nilsen Entreprenør AS<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" onClick={()=> window.location.href="#/Entreprenør"} >Ivar Nilsen Entreprenør AS<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#/Eiendom">Ivar Nilsen Eiendom AS</a>
+                            <a class="nav-link" onClick={()=> window.location.href="#/Eiendom"} href="#/Eiendom">Ivar Nilsen Eiendom AS</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#/Prosjekt" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Prosjekter
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="navbarDropdown">
-                                <a class="dropdown-item" href="#/prosjekt/1">Nordby utvikling</a>
-                                <a class="dropdown-item" href="#/prosjekt/2">Såstad</a>
+                                <a class="dropdown-item" onClick={()=> window.location.href="#/prosjekt/1"} >Nordby utvikling</a>
+                                <a class="dropdown-item" onClick={()=> window.location.href="#/prosjekt/2"} >Såstad</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#/kontakt">Kontakt oss</a>
+                            <a class="nav-link" onClick={()=> window.location.href="#/Kontakt"} >Kontakt oss</a>
                         </li>
                         </ul>
                     </div>
