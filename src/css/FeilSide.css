@@ -1,0 +1,23 @@
+#FeilSideContainer{
+    background-color: white;
+    margin: 0px;
+    padding-top: 150px;
+    text-align: center;
+    min-height: 100vh;
+}
+#FeilSideTekst1{
+    color: rgb(25, 36, 132);
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#FeilSideBilde{
+    width: 30%;
+    margin: auto;
+}
+
+@Media only screen and (max-width: 800px){
+    #FeilSideBilde{
+        width: 100%;
+        margin-top: 20px;
+    }
+}

@@ -16,6 +16,7 @@ import Om from '../src/Components/Om/Om';
 import Prosjekt from '../src/Components/Prosjekter/Prosjekt';
 import Tjenester from '../src/Components/Tjenester/Tjenester';
 import Kontakt from '../src/Components/Kontakt/Kontakt';
+import FeilSide from '../src/Components/FeilSide/FeilSide';
 
 ReactDOM.render(
     <HashRouter>
@@ -27,6 +28,7 @@ ReactDOM.render(
             <Route exact path="/prosjekt/:id" component={Prosjekt} />
             <Route exact path="/tjenester" component={Tjenester} />
             <Route exact path="/kontakt" component={Kontakt} />
+            <Route component={FeilSide} />
             <ToTop />
         </div>
     </HashRouter>

@@ -4,6 +4,26 @@ import defaultImage from "../../img/default/defaultImage.png";
 import nordby from "../../img/prosjekter/nordby.jpg";
 import Footer from '../Footer/Footer'
 import Navbar from '../Navbar/Navbar'
+import FeilSide from '../FeilSide/FeilSide'
+
+//Trying to create a redirect if user is trying to acces not existing id 
+class ProsjektSide extends Component{
+    render(){
+        let componentToRender;
+        if (this.props.match.params.id !== 1 && this.props.match.params.id !== 2) {
+            componentToRender = <FeilSide />;
+        } else {
+            componentToRender = <Prosjekt />;
+        }
+
+        return(
+            <div>
+                {componentToRender}
+            </div>
+        )
+    }
+}
+
 
 class Prosjekt extends Component{
     prosjekt = {
@@ -60,4 +80,5 @@ class Prosjekt extends Component{
         )
     }
 }
+
 export default Prosjekt;

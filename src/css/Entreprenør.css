@@ -1,5 +1,6 @@
 #EntreprenørContainer{
     padding-top: 75px;
+    background-color: white;
 }
 
 .introText{
@@ -26,8 +27,7 @@
 #tjenesterEntreprenørContainer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    display: grid;
-        grid-template-areas: 
+    grid-template-areas: 
             "hvemErVi tjenesterEntreprenør bilde"; 
 }
 #tjenesterEntreprenørFørsteBoks{
