@@ -56,6 +56,10 @@ display: block;
 display: block;
 }
 
+.dropup a {
+    color: black;
+}
+
 /* Change the background color of the dropup button when the dropup content is shown */
 .dropup:hover .dropbtn {
 text-decoration: underline;
