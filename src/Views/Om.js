@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import "../Styles/Om.css";
+import "../Styles/Om.scss";
 import Footer from '../Components/Footer'
 import GraverFraFacebook from "../Assets/Images/GraverFraFacebook.jpg"
 import Navbar from '../Components/Navbar'

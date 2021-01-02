@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import "../Styles/Tjenester.css";
+import "../Styles/Tjenester.scss";
 import logoTransparent from '../Assets/Logos/IN-Logo-sort.png'
 import Footer from '../Components/Footer'
 import Navbar from '../Components/Navbar'

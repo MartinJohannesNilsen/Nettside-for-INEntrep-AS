@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import "../Styles/FeilSide.css";
+import "../Styles/FeilSide.scss";
 import Footer from '../Components/Footer'
 import Navbar from '../Components/Navbar'
 import logoTransparent from '../Assets/Logos/IN-Logo-sort.png';

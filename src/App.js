@@ -18,7 +18,7 @@ const App = () => {
                 <Route exact path="/entreprenør" component={Entreprenør} />
                 <Route exact path="/eiendom" component={Eiendom} />
                 <Route exact path="/om" component={Om} />
-                <Route exact path="/prosjekt/:id" component={Prosjekt} />
+                {/* <Route exact path="/prosjekt/:id" component={Prosjekt} /> */}
                 <Route exact path="/tjenester" component={Tjenester} />
                 <Route exact path="/kontakt" component={Kontakt} />
                 {/* <Route exact path="/404" component={FeilSide} /> */}

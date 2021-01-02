@@ -1,3 +1,5 @@
+@import "colors";
+
 #eiendomContainer{
     width: 80%;
     background-color: white;
@@ -23,7 +25,7 @@
 }
 
 #eiendomTabsContainer{
-    background-color: rgb(232, 202, 82);
+    background-color: $yellow;
 }
 #pills-tab{
     width: 100%;
@@ -35,7 +37,7 @@
     padding: 15px;
     color: black;
     font-weight: bold;
-    background-color: rgb(232, 202, 82);
+    background-color: $yellow;
     border-radius: 0;
     /*
     border-right: 0.2px solid black;

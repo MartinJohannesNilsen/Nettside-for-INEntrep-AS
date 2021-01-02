@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import $ from 'jquery';
-import "../Styles/Entreprenør.css";
+import "../Styles/Entreprenør.scss";
 import Navbar from '../Components/Navbar'
 import Bildekarusell from '../Components/Bildekarusell';
 import Footer from '../Components/Footer'
@@ -9,6 +9,7 @@ import firmanavn from "../Assets/Logos/Firmanavn.png"
 import defaultImage from "../Assets/Images/Default/defaultImage.png"
 import defaultAvatar from "../Assets/Images/Default/defaultAvatar.jpg"
 import GraverFraFacebook from "../Assets/Images/GraverFraFacebook.jpg"
+import gartneriet from "../Assets/Images/Prosjekter/gartneriet_varnaveien.jpg" 
 // import defaultImage2 from "../Assets/default/defaultImage2.jpg"
 
 
@@ -33,8 +34,7 @@ const Entreprenør = () => {
                         <div className="card-body" id="tjenesterEntreprenørContainer">
                             <div id="tjenesterEntreprenørFørsteBoks">
                                 <h5> Hvem er vi? </h5>
-                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Condimentum id venenatis a condimentum vitae sapien pellentesque. Sed vulputate odio ut enim.  </p>
-                                <p> Bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida. Mauris pellentesque pulvinar pellentesque habitant morbi tristique.</p>
+                                <p>Vi er ett mindre entreprenørselskap som utfører alt av grunn- og terrengarbeider på Østlandet. Selskapet har kontorer i Årvollskogen 42 og lager på Dillingtoppen 19, Moss. Våre ansatte består av dyktige håndverkere. Firmaet har fokus på å levere kvalitet og kan vise til gode referanser.</p>
                                 <button type="button" className="btn btn-outline-dark btn-sm" id="tjenesterEntreprenørEntreprenørButton" onClick={() => {$('html, body').animate({scrollTop: $("#omOss").offset().top+1}, 2000);}}>Les mer</button>
                             </div>
                             <div id="tjenesterEntreprenørAndreBoks">
@@ -45,10 +45,10 @@ const Entreprenør = () => {
                                     <li>Riving</li>
                                     <li>Drenering</li>
                                     <li>Asfaltering</li>
+                                    <li>Grøntanlegg</li>
                                     <li>Salg/transport av matjord, bark og fyllmasse</li>
-                                    <li>Anlegg</li>
                                 </ul>
-                                <a href="/tjenester"><button type="button" className="btn btn-outline-dark btn-sm" id="tjenesterEntreprenørEntreprenørButton">Les mer</button></a>  
+                                {/* <a href="/tjenester"><button type="button" className="btn btn-outline-dark btn-sm" id="tjenesterEntreprenørEntreprenørButton">Les mer</button></a>   */}
                             </div>
                             <div  id="tjenesterEntreprenørTredjeBoks">
                                 <img src={logoTransparentSort} id="tjenesterEntreprenørLogo" alt="Logo for Ivar Nilsen Entreprenør AS"/>
@@ -65,19 +65,19 @@ const Entreprenør = () => {
 
                     <div className="prosjekterShowCards">
                         <div className="card" id="prosjekterShowCard1">
-                            <img className="card-img-top" src={defaultImage} alt="Prosjektbilde" />
+                            <img className="card-img-top" src={gartneriet} alt="Prosjektbilde" />
                             <div className="card-body">
-                            <h5 className="card-title">Nordby utvikling</h5>
-                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="/prosjekt/1" className="btn btn-dark btn-sm">Les mer</a>
+                            <h5 className="card-title">Gartneriet Varnaveien 10</h5>
+                            <p className="card-text">Grunn- og utomhusarbeider for 39 leiligheter. Byggherre Bolig & Eiendomsutvikling AS.</p>
+                            {/* <a href="/prosjekt/1" className="btn btn-dark btn-sm">Les mer</a> */}
                             </div>
                         </div>
                         <div className="card" id="prosjekterShowCard2">
                             <img className="card-img-top" if="prosjekterShowCardImg" src={defaultImage} alt="Prosjektbilde" />
                             <div className="card-body">
-                            <h5 className="card-title">Såstad</h5>
-                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="/prosjekt/2" className="btn btn-dark btn-sm">Les mer</a>
+                            <h5 className="card-title">Sollilunden garasjeanlegg</h5>
+                            <p className="card-text">Rivning av 77 garasjer og grunnarbeider for 74 nye, samt opparbeidelse av p-plasser og søppelcontainere.</p>
+                            {/* <a href="/prosjekt/2" className="btn btn-dark btn-sm">Les mer</a> */}
                             </div>
                         </div>
                     </div>
@@ -94,6 +94,11 @@ const Entreprenør = () => {
                             <h5>Ivar Nilsen</h5>
                             <p>Daglig leder</p>
                         </div>
+                        <div className="ansattCard" id="ansattCard6">
+                            <img src={defaultAvatar} alt="Portrett av ansatt"/>
+                            <h5>Geir Viken</h5>
+                            <p>Prosjektleder</p>
+                        </div>
                         <div className="ansattCard" id="ansattCard2">
                             <img src={defaultAvatar} alt="Portrett av ansatt"/>
                             <h5>Merete Monsen</h5>
@@ -101,33 +106,28 @@ const Entreprenør = () => {
                         </div>
                         <div className="ansattCard" id="ansattCard3">
                             <img src={defaultAvatar} alt="Portrett av ansatt"/>
-                            <h5>David Viggo Andersen</h5>
+                            <h5>David V. Andersen</h5>
                             <p>Anleggsmaskinfører</p>
                         </div>
-                        <div className="ansattCard" id="ansattCard4">
+                        <div className="ansattCard" id="ansattCard6">
                             <img src={defaultAvatar} alt="Portrett av ansatt"/>
-                            <h5>Piotrek Baworowski</h5>
-                            <p>Papapiotrek</p>
+                            <h5>Runar Star</h5>
+                            <p>Lastebilsjåfør</p>
+                        </div>
+                        <div className="ansattCard" id="ansattCard6">
+                            <img src={defaultAvatar} alt="Portrett av ansatt"/>
+                            <h5>Fredrik Falkenberg</h5>
+                            <p>Lastebilsjåfør</p>
                         </div>
                         <div className="ansattCard" id="ansattCard5">
                             <img src={defaultAvatar} alt="Portrett av ansatt"/>
                             <h5>André Johansen</h5>
+                            <p>Rørlegger/Grunnarbeider</p>
+                        </div>
+                        <div className="ansattCard" id="ansattCard4">
+                            <img src={defaultAvatar} alt="Portrett av ansatt"/>
+                            <h5>Piotr Baworowski</h5>
                             <p>Grunnarbeider</p>
-                        </div>
-                        <div className="ansattCard" id="ansattCard6">
-                            <img src={defaultAvatar} alt="Portrett av ansatt"/>
-                            <h5>Navn Navnesen</h5>
-                            <p>Ansattittel</p>
-                        </div>
-                        <div className="ansattCard" id="ansattCard6">
-                            <img src={defaultAvatar} alt="Portrett av ansatt"/>
-                            <h5>Navn Navnesen</h5>
-                            <p>Ansattittel</p>
-                        </div>
-                        <div className="ansattCard" id="ansattCard6">
-                            <img src={defaultAvatar} alt="Portrett av ansatt"/>
-                            <h5>Navn Navnesen</h5>
-                            <p>Ansattittel</p>
                         </div>
                     </div>
                 </div>
@@ -142,8 +142,8 @@ const Entreprenør = () => {
                             <img src={GraverFraFacebook} id="omOssBilde" alt="Illustrerende bilde av firmaet"/>
                         </div>
                         <div id="omOssTekst">                      
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Cursus euismod quis viverra nibh cras pulvinar mattis nunc sed labore et dolore magna aliqua. Cursus euismod quis viverra nibh cras labete ut labore et dolore magna aliqua. Cursus euismod quis viverra nibh cras pulvinar mattis nunc sed.</p>
-                            <a href="/om" className="btn btn-outline-light btn-sm">Les mer</a>
+                        <h5> Ivar Nilsen Entreprenør AS ble etablert av Ivar Nilsen en vårdag i 1996. Vi er et mindre entreprenørfirma som holder til i Moss. Litt forhistorie følger. Ivar er sønn av Sverre Johannes Nilsen som startet sin entreprenørforretning i 1957 på Løkenholtet i Råde. Dette firmaet ble senere til Råde Graveservice AS. Etter hvert ble firmaet overtatt av Sverres barn og Ivar er således så godt som født og oppvokst i bransjen. Han gikk ut av eiersiden i Råde Graveservice i 2004 og er i dag daglig leder i Ivar Nilsen Entreprenør AS.</h5>
+                            {/* <a href="/om" className="btn btn-outline-light btn-sm">Les mer</a> */}
                         </div>
                     </div>
                 </div>

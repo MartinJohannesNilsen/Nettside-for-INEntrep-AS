@@ -1,3 +1,5 @@
+@import "colors";
+
 #EntreprenørContainer{
     padding-top: 75px;
     background-color: white;
@@ -15,7 +17,7 @@
 
 #tjenesterEntreprenør{
     padding: 40px 10% 40px 10%;
-    background-color:rgb(232, 202, 82);
+    background-color:$yellow;
 }
 #tjenesteboks{
     background-color: white;
@@ -65,7 +67,7 @@
 #prosjekterTittelUnderstrek{
     width: 5%;
     height: 3px;
-    background-color:rgb(232, 202, 82);
+    background-color: $yellow;
 }
 .prosjekterShowCards{
     width: 80%;
@@ -93,7 +95,8 @@
 
 
 #ansatte{
-    background-color: rgb(232, 202, 82);
+    // background-color: rgb(232, 202, 82);
+    background-color: $yellow;
     text-align: center;
 }
 #ansatteTittel h3{ 

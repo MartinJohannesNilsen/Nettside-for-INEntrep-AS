@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Styles/ToTop.css';
+import '../Styles/ToTop.scss';
 import $ from 'jquery';
 
 const ToTop = ()  => {

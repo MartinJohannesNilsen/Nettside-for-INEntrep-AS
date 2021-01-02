@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../Styles/Footer.css';
+import '../Styles/Footer.scss';
 
 const Footer = () => {
     const [location] = useState(window.location.href)
@@ -24,7 +24,7 @@ const Footer = () => {
                         <div>Mail: <a href="mailto:ivar@ivar-nilsen.no" className="sortTekst" title="Send mail til Ivar Nilsen Entreprenør AS">ivar@ivar-nilsen.no</a></div>
                     </div>
                     <hr className="clearfix w-100 d-md-none pb-3"/>
-                    <div className="col-md-6 mb-md-0 mb-3" id="footerLinker">
+                    {/* <div className="col-md-6 mb-md-0 mb-3" id="footerLinker">
                         <h5 className="text-uppercase font-weight-bold">Vil du vite mer?</h5>
                         <div><a href="/om" className="sortTekst" title="Les mer om Ivar Nilsen Entreprenør AS">Om oss </a></div>
                         <div><a href="/tjenester" className="sortTekst" title="Les mer om tjenestene vi tilbyr">Tjenester vi tilbyr</a></div>
@@ -37,7 +37,7 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     </div>
                 </div>
             </footer>

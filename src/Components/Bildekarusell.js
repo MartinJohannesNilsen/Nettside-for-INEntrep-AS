@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/Bildekarusell.css";
+import "../Styles/Bildekarusell.scss";
 import Bilde1 from "../Assets/Images/Bildekarusell/Bilde1.jpg"
 import Bilde2 from "../Assets/Images/Bildekarusell/Bilde2.jpg"
 import Bilde3 from "../Assets/Images/Bildekarusell/Bilde3.jpg"
