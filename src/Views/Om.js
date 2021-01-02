@@ -1,8 +1,7 @@
 import React, {useEffect} from "react";
 import "../Styles/Om.css";
-// import defaultImage from "../IMG/default/defaultImage.png";
 import Footer from '../Components/Footer'
-import GraverFraFacebook from "../IMG/GraverFraFacebook.jpg"
+import GraverFraFacebook from "../Assets/Images/GraverFraFacebook.jpg"
 import Navbar from '../Components/Navbar'
 
 const Om = () => {

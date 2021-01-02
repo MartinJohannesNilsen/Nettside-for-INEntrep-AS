@@ -1,8 +1,8 @@
 import React from "react";
 import "../Styles/Bildekarusell.css";
-import Bilde1 from "../IMG/Bildekarusell/Bilde1.jpg"
-import Bilde2 from "../IMG/Bildekarusell/Bilde2.jpg"
-import Bilde3 from "../IMG/Bildekarusell/Bilde3.jpg"
+import Bilde1 from "../Assets/Images/Bildekarusell/Bilde1.jpg"
+import Bilde2 from "../Assets/Images/Bildekarusell/Bilde2.jpg"
+import Bilde3 from "../Assets/Images/Bildekarusell/Bilde3.jpg"
 // import $ from "jquery";
 
 const Bildekarusell = () => {

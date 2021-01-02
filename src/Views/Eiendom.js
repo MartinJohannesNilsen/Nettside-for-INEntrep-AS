@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import "../Styles/Eiendom.css";
-import defaultImage from '../IMG/default/defaultImage.png'
-import dillingtoppen from '../IMG/Eiendom/dillingtoppen.jpg'
+import defaultImage from '../Assets/Images/Default/defaultImage.png'
+import dillingtoppen from '../Assets/Images/Eiendom/dillingtoppen.jpg'
 import Footer from '../Components/Footer'
 import Navbar from '../Components/Navbar'
 

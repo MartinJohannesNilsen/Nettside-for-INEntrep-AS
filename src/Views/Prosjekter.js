@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import "../Styles/Prosjekt.css";
-import defaultImage from "../IMG/default/defaultImage.png";
-import nordby from "../IMG/prosjekter/nordby.jpg";
+import defaultImage from "../Assets/Images/Default/defaultImage.png";
+import nordby from "../Assets/Images/Prosjekter/nordby.jpg";
 import Footer from '../Components/Footer'
 import Navbar from '../Components/Navbar'
 import FeilSide from '../Views/FeilSide'

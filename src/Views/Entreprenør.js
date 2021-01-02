@@ -4,12 +4,12 @@ import "../Styles/Entreprenør.css";
 import Navbar from '../Components/Navbar'
 import Bildekarusell from '../Components/Bildekarusell';
 import Footer from '../Components/Footer'
-import logoTransparentSort from "../IMG/logo/logoTransparentSort.png"
-import firmanavn from "../IMG/logo/firmanavn.png"
-import defaultImage from "../IMG/default/defaultImage.png"
-import defaultAvatar from "../IMG/default/defaultAvatar.jpg"
-import GraverFraFacebook from "../IMG/GraverFraFacebook.jpg"
-// import defaultImage2 from "../IMG/default/defaultImage2.jpg"
+import logoTransparentSort from "../Assets/Logos/IN-Logo-sort.png"
+import firmanavn from "../Assets/Logos/Firmanavn.png"
+import defaultImage from "../Assets/Images/Default/defaultImage.png"
+import defaultAvatar from "../Assets/Images/Default/defaultAvatar.jpg"
+import GraverFraFacebook from "../Assets/Images/GraverFraFacebook.jpg"
+// import defaultImage2 from "../Assets/default/defaultImage2.jpg"
 
 
 const Entreprenør = () => {
