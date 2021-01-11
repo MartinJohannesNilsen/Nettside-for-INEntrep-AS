@@ -1,7 +1,6 @@
 import React, {useEffect} from "react";
 import "../Styles/Om.scss";
 import Footer from '../Components/Footer'
-import GraverFraFacebook from "../Assets/Images/GraverFraFacebook.jpg"
 import Navbar from '../Components/Navbar'
 
 const Om = () => {
@@ -14,7 +13,7 @@ const Om = () => {
         <div>
             <Navbar />
             <div id="omContainer">
-                <img src={GraverFraFacebook} id="omBilde" alt="IN Entreprenør Gravemaskin"/>
+                {/* <img src={GraverFraFacebook} id="omBilde" alt="IN Entreprenør Gravemaskin"/> */}
                 <div id="omNavnContainer">
                     <h1>Ivar Nilsen Entreprenør</h1>
                     <h5>Historien bak firmaet</h5>

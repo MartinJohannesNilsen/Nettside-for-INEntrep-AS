@@ -1,11 +1,12 @@
 import React, {useEffect} from "react";
 import "../Styles/Eiendom.scss";
-import defaultImage from '../Assets/Images/Default/defaultImage.png'
-import dillingtoppen from '../Assets/Images/Eiendom/dillingtoppen.jpg'
-import dillingtoppen2 from '../Assets/Images/Eiendom/Dillingtoppen 01 (002).png'
 import Footer from '../Components/Footer'
 import Navbar from '../Components/Navbar'
 
+const defaultImage = "https://firebasestorage.googleapis.com/v0/b/ivarnilsenentreprenoras.appspot.com/o/Default%2FdefaultImage.png?alt=media&token=19f06542-79c4-45b5-92f1-64a17bc31c24"
+const dillingtoppen = "https://firebasestorage.googleapis.com/v0/b/ivarnilsenentreprenoras.appspot.com/o/Eiendom%2Fdillingtoppen.jpg?alt=media&token=40599a96-b485-4d1f-a678-c95eee101325"
+const dillingtoppen2 = "https://firebasestorage.googleapis.com/v0/b/ivarnilsenentreprenoras.appspot.com/o/Eiendom%2FDillingtoppen%2001%20(002).png?alt=media&token=778ae086-68e6-4994-b7c8-433640263a0f"
+const nordbyUtvikling = "https://firebasestorage.googleapis.com/v0/b/ivarnilsenentreprenoras.appspot.com/o/Eiendom%2FnordbyUtvikling.png?alt=media&token=a96e4e11-4b15-43ef-a9ad-5a19c53272f5"
 
 const Eiendomside = () => {
 
@@ -56,9 +57,9 @@ const Eiendom1 = () => {
                 <hr/>
             </div>
             <div id="eiendomTekstContainer">
-                <p> 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc congue nisi vitae suscipit tellus mauris a diam. Sed egestas egestas fringilla phasellus faucibus scelerisque. Facilisi cras fermentum odio eu feugiat pretium nibh. Sit amet nisl purus in mollis nunc sed. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Congue nisi vitae suscipit tellus. Vitae turpis massa sed elementum tempus egestas. Nisi est sit amet facilisis. Urna nunc id cursus metus aliquam eleifend mi in. Dui ut ornare lectus sit amet. Egestas sed tempus urna et pharetra. Massa massa ultricies mi quis hendrerit dolor magna eget est. Vel orci porta non pulvinar neque. Faucibus nisl tincidunt eget nullam. Interdum posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Felis imperdiet proin fermentum leo vel orci. Gravida rutrum quisque non tellus orci. Est ullamcorper eget nulla facilisi.
-                </p>
+                <h4> 
+                    Ivar Nilsen Eiendom AS ble etablert i 2003. Selskapet eier i dag ett leilighetskompleks i Øisteinsgate på Jeløy, med 6 utleieleiligheter og en industritomt på Dillingtoppen der det er prosjektert ett industribygg på 800 m2 i to etasjer. I tillegg vil det på sikt utvikles ett boligområde på Nordby i Våler.
+                </h4>
                 
             </div>
         </div>
@@ -105,18 +106,16 @@ const Eiendom3 = () => {
 const Eiendom4 = () => {
     return(
         <div>
-            <img src={defaultImage} id="eiendomBilde" alt="Illustrerende bilde av Nordby utvikling"/>
+            <img src={nordbyUtvikling} id="eiendomBilde" alt="Illustrerende bilde av Nordby utvikling"/>
             <div id="eiendomNavnContainer">
                 <h1>Nordby utvikling</h1>
                 <h5>Fremtidige leiligheter</h5>
                 <hr/>
             </div>
             <div id="eiendomTekstContainer">
-                <h5>Om prosjektet</h5>
                 <p> 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc congue nisi vitae suscipit tellus mauris a diam. Sed egestas egestas fringilla phasellus faucibus scelerisque. Est ullamcorper eget nulla facilisi. Facilisi cras fermentum odio eu feugiat pretium nibh. Sit amet nisl purus in mollis nunc sed.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc congue nisi vitae suscipit tellus mauris a diam. Sed egestas egestas fringilla phasellus faucibus scelerisque. Facilisi cras fermentum odio eu feugiat pretium nibh. Sit amet nisl purus in mollis nunc sed. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Congue nisi vitae suscipit tellus. Vitae turpis massa sed elementum tempus egestas. Nisi est sit amet facilisis. Urna nunc id cursus metus aliquam eleifend mi in. Dui ut ornare lectus sit amet. Egestas sed tempus urna et pharetra. Massa massa ultricies mi quis hendrerit dolor magna eget est. Vel orci porta non pulvinar neque. Faucibus nisl tincidunt eget nullam. Interdum posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Felis imperdiet proin fermentum leo vel orci. Gravida rutrum quisque non tellus orci. Est ullamcorper eget nulla facilisi.
                 </p>
-                <a href="/prosjekt/1" class="btn btn-outline-dark btn-sm">Les mer</a>
             </div>
         </div>
     )

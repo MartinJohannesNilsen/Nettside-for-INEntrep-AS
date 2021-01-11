@@ -2,16 +2,14 @@ import React, { useEffect } from "react";
 import $ from 'jquery';
 import "../Styles/Entreprenør.scss";
 import Navbar from '../Components/Navbar'
-import Bildekarusell from '../Components/Bildekarusell';
+import Carousel from '../Components/Carousel';
 import Footer from '../Components/Footer'
 import logoTransparentSort from "../Assets/Logos/IN-Logo-sort.png"
 import firmanavn from "../Assets/Logos/Firmanavn.png"
-import defaultImage from "../Assets/Images/Default/defaultImage.png"
-import defaultAvatar from "../Assets/Images/Default/defaultAvatar.jpg"
-import GraverFraFacebook from "../Assets/Images/GraverFraFacebook.jpg"
-import gartneriet from "../Assets/Images/Prosjekter/gartneriet_varnaveien.jpg" 
-// import defaultImage2 from "../Assets/default/defaultImage2.jpg"
+import projects from "../Data/ProjectData"
 
+const defaultImage = "https://firebasestorage.googleapis.com/v0/b/ivarnilsenentreprenoras.appspot.com/o/Default%2FdefaultImage.png?alt=media&token=19f06542-79c4-45b5-92f1-64a17bc31c24"
+const defaultAvatar = "https://firebasestorage.googleapis.com/v0/b/ivarnilsenentreprenoras.appspot.com/o/Default%2FdefaultAvatar.jpg?alt=media&token=5dba7cec-4e9d-47f5-b500-20b9011d2ffc"
 
 const Entreprenør = () => {
     useEffect(() => {
@@ -22,7 +20,7 @@ const Entreprenør = () => {
         <Navbar />
             <div id="EntreprenørContainer">
                 <div>
-                    <Bildekarusell />
+                    <Carousel/>
                 </div>
                 
                 <div className="introText">
@@ -40,7 +38,7 @@ const Entreprenør = () => {
                             <div id="tjenesterEntreprenørAndreBoks">
                                 <h5> Hvilke tjenester utfører vi? </h5>
                                 <p> Vi opererer for det meste på Østlandet, og utfører arbeid innen: </p>
-                                <ul> 
+                                <ul class="list"> 
                                     <li>Graving</li>
                                     <li>Riving</li>
                                     <li>Drenering</li>
@@ -48,7 +46,7 @@ const Entreprenør = () => {
                                     <li>Grøntanlegg</li>
                                     <li>Salg/transport av matjord, bark og fyllmasse</li>
                                 </ul>
-                                {/* <a href="/tjenester"><button type="button" className="btn btn-outline-dark btn-sm" id="tjenesterEntreprenørEntreprenørButton">Les mer</button></a>   */}
+                                <a href="/tjenester"><button type="button" className="btn btn-outline-dark btn-sm" id="tjenesterEntreprenørEntreprenørButton">Les mer</button></a>  
                             </div>
                             <div  id="tjenesterEntreprenørTredjeBoks">
                                 <img src={logoTransparentSort} id="tjenesterEntreprenørLogo" alt="Logo for Ivar Nilsen Entreprenør AS"/>
@@ -63,24 +61,18 @@ const Entreprenør = () => {
                         <hr id="prosjekterTittelUnderstrek"/>
                     </div>
 
-                    <div className="prosjekterShowCards">
-                        <div className="card" id="prosjekterShowCard1">
-                            <img className="card-img-top" src={gartneriet} alt="Prosjektbilde" />
-                            <div className="card-body">
-                            <h5 className="card-title">Gartneriet Varnaveien 10</h5>
-                            <p className="card-text">Grunn- og utomhusarbeider for 39 leiligheter. Byggherre Bolig & Eiendomsutvikling AS.</p>
-                            {/* <a href="/prosjekt/1" className="btn btn-dark btn-sm">Les mer</a> */}
-                            </div>
+                        <div className="prosjekterShowCards">
+                            {projects.map((project, index) => (
+                                <div className="card" id={"prosjekterShowCard" + (index+1)} key={project.alt}>
+                                <img className="card-img-top" id="prosjekterShowCardImg" src={project.url} alt={project.alt} />
+                                    <div className="card-body">
+                                        <h5 className="card-title">{project.title}</h5>
+                                        <p className="card-text">{project.description}</p>
+                                        {/* <a href="/prosjekt/1" className="btn btn-dark btn-sm">Les mer</a> */}
+                                    </div>
+                                </div>
+                            ))}
                         </div>
-                        <div className="card" id="prosjekterShowCard2">
-                            <img className="card-img-top" if="prosjekterShowCardImg" src={defaultImage} alt="Prosjektbilde" />
-                            <div className="card-body">
-                            <h5 className="card-title">Sollilunden garasjeanlegg</h5>
-                            <p className="card-text">Rivning av 77 garasjer og grunnarbeider for 74 nye, samt opparbeidelse av p-plasser og søppelcontainere.</p>
-                            {/* <a href="/prosjekt/2" className="btn btn-dark btn-sm">Les mer</a> */}
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div id="ansatte">
@@ -139,7 +131,7 @@ const Entreprenør = () => {
                     </div> 
                     <div id="omOssContainer">
                         <div>                      
-                            <img src={GraverFraFacebook} id="omOssBilde" alt="Illustrerende bilde av firmaet"/>
+                            <img src={defaultImage} id="omOssBilde" alt="Illustrerende bilde av firmaet"/>
                         </div>
                         <div id="omOssTekst">                      
                         <h5> Ivar Nilsen Entreprenør AS ble etablert av Ivar Nilsen en vårdag i 1996. Vi er et mindre entreprenørfirma som holder til i Moss. Litt forhistorie følger. Ivar er sønn av Sverre Johannes Nilsen som startet sin entreprenørforretning i 1957 på Løkenholtet i Råde. Dette firmaet ble senere til Råde Graveservice AS. Etter hvert ble firmaet overtatt av Sverres barn og Ivar er således så godt som født og oppvokst i bransjen. Han gikk ut av eiersiden i Råde Graveservice i 2004 og er i dag daglig leder i Ivar Nilsen Entreprenør AS.</h5>

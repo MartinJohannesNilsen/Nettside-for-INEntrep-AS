@@ -1,8 +1,8 @@
 @import "colors";
 
 #EntreprenørContainer{
-    padding-top: 75px;
-    background-color: white;
+    padding-top: 70px;
+    background-color:white;
 }
 
 .introText{
@@ -13,8 +13,6 @@
 #introTextImg {
     width: 40%;
 }
-
-
 #tjenesterEntreprenør{
     padding: 40px 10% 40px 10%;
     background-color:$yellow;
@@ -44,6 +42,9 @@
     /*list-style-type: square;*/
     list-style-type: circle;
 }
+// .list{
+//     list-style-image: url('../Assets/Icons/checkmark.svg');
+// }
 #tjenesterEntreprenørEntreprenørButton{
     margin: auto;
 }
@@ -152,10 +153,28 @@
 }
 #omOssBilde{
     grid-area: bilde;
-    width: 300px;
+    width: 80%;
     margin: auto;
     padding: 20px;
-    height: 400px;
+}
+
+@media screen and (max-width: 1000px){
+    #omOssBilde{
+        grid-area: bilde;
+        width: 80%;
+    }
+}
+@media screen and (max-width: 1400px){
+    #omOssContainer{
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "bilde"
+            "tekst";
+        padding: 10px 0 20px 0;
+    }
 }
 #omOssTekst{
     grid-area: tekst;

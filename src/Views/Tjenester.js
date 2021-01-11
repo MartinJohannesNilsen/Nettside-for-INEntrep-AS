@@ -1,54 +1,46 @@
-import React, {useEffect} from "react";
+import React from "react";
 import "../Styles/Tjenester.scss";
-import logoTransparent from '../Assets/Logos/IN-Logo-sort.png'
 import Footer from '../Components/Footer'
 import Navbar from '../Components/Navbar'
+import logoTransparent from '../Assets/Logos/IN-Logo-sort.png'
+import serviceList from "../Data/ServiceData.js"
+import PhotoGallery from "../Components/PhotoGallery";
 
 const Tjenester = () => {
+    const [serviceIndex, setService] = React.useState(0);
 
-    useEffect(() => {
+    React.useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
+
+    const onChange = e => {
+        setService(e.target.value)
+    }
 
     return(
         <div>
             <Navbar />
             <div id="tjenesterContainer">
                 <div id="tjenesterTittel"> 
-                    <h3>Tjenester</h3>
+                    <h3>Hva vi utfører</h3>
                     <hr id="tjenesterUnderstrek"/>
                 </div>
                 <div id="tjenesterInfo">
-                    <p id="tjenesterTekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam sem et tortor consequat id. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue. Malesuada fames ac turpis egestas.</p>
+                    <p id="tjenesterTekst">Her kan du lese om de tjenestene vi tilbyr. I løpet av de siste {(new Date().getFullYear()) - 1996} årene har vi gjennomført et godt stykke arbeid rundt om på Østlandet. På denne siden ønsker vi forklare litt hva det er vi gjør, og vise noen referansebilder av tidligere prosjekter.</p>    
+                    <form>
+                        <div className="form-group">
+                            <select className="form-control" onChange={onChange} defaultValue="-1">
+                                {serviceList.map((service, index) => (
+                                    <option value={index} key={service.title}>{service.title}</option>
+                                ))}
+                            </select>
+                        </div>
+                    </form>
                     <div id="tjenesterAvsnitt">
-                        <h5>Graving</h5>    
+                        <h5>{serviceList[serviceIndex].title}</h5>    
                         <hr id="tjenesterHr"/>
-                        <div><p id="tjenesterTekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus sit amet luctus venenatis lectus. Elementum curabitur vitae nunc sed velit dignissim sodales.</p></div>
-                    </div>
-                    <div id="tjenesterAvsnitt">
-                        <h5>Riving</h5>    
-                        <hr id="tjenesterHr"/>
-                        <div><p id="tjenesterTekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus sit amet luctus venenatis lectus. Elementum curabitur vitae nunc sed velit dignissim sodales.</p></div>
-                    </div>
-                    <div id="tjenesterAvsnitt">
-                        <h5>Drenering</h5>    
-                        <hr id="tjenesterHr"/>
-                        <div><p id="tjenesterTekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus sit amet luctus venenatis lectus. Elementum curabitur vitae nunc sed velit dignissim sodales.</p></div>
-                    </div>
-                    <div id="tjenesterAvsnitt">
-                        <h5>Asfaltering</h5>    
-                        <hr id="tjenesterHr"/>
-                        <div><p id="tjenesterTekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus sit amet luctus venenatis lectus. Elementum curabitur vitae nunc sed velit dignissim sodales.</p></div>
-                    </div>
-                    <div id="tjenesterAvsnitt">
-                        <h5>Salg/Transport av matjord, bark og fyllmasse</h5>    
-                        <hr id="tjenesterHr"/>
-                        <div><p id="tjenesterTekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus sit amet luctus venenatis lectus. Elementum curabitur vitae nunc sed velit dignissim sodales.</p></div>
-                    </div>
-                    <div id="tjenesterAvsnitt">
-                        <h5>Anlegg</h5>    
-                        <hr id="tjenesterHr"/>
-                        <div><p id="tjenesterTekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus sit amet luctus venenatis lectus. Elementum curabitur vitae nunc sed velit dignissim sodales.</p></div>
+                        <p id="tjenesterTekst">{serviceList[serviceIndex].text}</p>
+                        <PhotoGallery index={serviceIndex} key={serviceIndex}></PhotoGallery>
                     </div>
                     <img src={logoTransparent} id="tjenesterBilde" alt="Firmalogo"/>
                 </div>
