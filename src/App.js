@@ -17,7 +17,6 @@ const App = () => {
                 <Route exact path="/kontakt" component={Kontakt} />
                 <Route path="*" component={FeilSide} id={1} />
             </Switch>
-            {/* <ToTop /> */}
 		</BrowserRouter>
 	);
 };
