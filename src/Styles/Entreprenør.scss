@@ -81,7 +81,7 @@
 }
 
 #prosjekterShowCardImg{
-    height: 40%;
+    height: 200px;
 }
 #prosjekterShowCard1{
     width: 60%;
@@ -149,13 +149,16 @@
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
         "bilde tekst";
-    padding: 10px 0 60px 0;
+    padding: 10px 0 50px 0;
 }
 #omOssBilde{
     grid-area: bilde;
     width: 80%;
     margin: auto;
     padding: 20px;
+}
+#omOssTekst h5{
+    font-weight: 200;
 }
 
 @media screen and (max-width: 1000px){

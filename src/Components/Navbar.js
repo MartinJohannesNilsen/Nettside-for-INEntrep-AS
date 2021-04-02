@@ -16,17 +16,8 @@ const Navbar = () => {
                     <li className="nav-item">
                         <a className="nav-link" href="/entreprenør">Ivar Nilsen Entreprenør AS<span className="sr-only">(current)</span></a>
                     </li>
-                    <li className="nav-item">
+                    {/* <li className="nav-item">
                         <a className="nav-link" href="/eiendom">Ivar Nilsen Eiendom AS</a>
-                    </li>
-                    {/* <li className="nav-item dropdown">
-                        <a className="nav-link dropdown-toggle" href="/Prosjekt" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Prosjekter
-                        </a>
-                        <div className="dropdown-menu" aria-labelledby="navbarDropdown" id="navbarDropdown">
-                            <a className="dropdown-item" href="/prosjekt/1">Nordby utvikling</a>
-                            <a className="dropdown-item" href="/prosjekt/2">Såstad</a>
-                        </div>
                     </li> */}
                     <li className="nav-item">
                         <a className="nav-link" href="/tjenester">Hva vi utfører</a>

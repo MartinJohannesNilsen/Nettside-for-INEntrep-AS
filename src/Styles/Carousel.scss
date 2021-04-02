@@ -21,11 +21,13 @@
 #ForsideKarusell {
 }
 
-// @media only screen and (max-width: 1000px){
-//     .carousel-inner{
-//         height: 60vh;
-//     }
-// }
+@media only screen and (min-width: 1000px) {
+	.carousel-inner img {
+		height: 60vh;
+		object-fit:cover; /* Do not scale the image */
+		object-position: 50% 50%; /* Center the image within the element */
+	}
+}
 
 // @media only screen and (max-width: 800px){
 //     .carousel-inner{

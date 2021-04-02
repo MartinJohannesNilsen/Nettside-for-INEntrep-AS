@@ -7,6 +7,7 @@ const defaultImage = "https://firebasestorage.googleapis.com/v0/b/ivarnilsenentr
 const dillingtoppen = "https://firebasestorage.googleapis.com/v0/b/ivarnilsenentreprenoras.appspot.com/o/Eiendom%2Fdillingtoppen.jpg?alt=media&token=40599a96-b485-4d1f-a678-c95eee101325"
 const dillingtoppen2 = "https://firebasestorage.googleapis.com/v0/b/ivarnilsenentreprenoras.appspot.com/o/Eiendom%2FDillingtoppen%2001%20(002).png?alt=media&token=778ae086-68e6-4994-b7c8-433640263a0f"
 const nordbyUtvikling = "https://firebasestorage.googleapis.com/v0/b/ivarnilsenentreprenoras.appspot.com/o/Eiendom%2FnordbyUtvikling.png?alt=media&token=a96e4e11-4b15-43ef-a9ad-5a19c53272f5"
+const øisteinsgate = "https://firebasestorage.googleapis.com/v0/b/ivarnilsenentreprenoras.appspot.com/o/Eiendom%2FØisteinsgate.JPG?alt=media&token=ee4fab81-73cc-4b75-9565-5717e040523b"
 
 const Eiendomside = () => {
 
@@ -69,7 +70,7 @@ const Eiendom1 = () => {
 const Eiendom2 = () => {
     return(
         <div>
-            <img src={defaultImage} id="eiendomBilde" alt="Illustrerende bilder av Øysteinsgate 8"/>
+            <img src={øisteinsgate} id="eiendomBilde" alt="Illustrerende bilder av Øysteinsgate 8"/>
             <div id="eiendomNavnContainer">
                 <h1>Øisteinsgate 8</h1>
                 <h5>Leiligheter</h5>
