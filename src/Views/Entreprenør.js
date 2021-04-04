@@ -6,6 +6,7 @@ import Carousel from "../Components/Carousel";
 import Footer from "../Components/Footer";
 import logoTransparentSort from "../Assets/Logos/IN-Logo-sort.png";
 import logoTransparentHvit from "../Assets/Logos/IN-Logo-hvit.png";
+import jubileumsikon from "../Assets/Icons/Jubileumsikon.svg";
 import firmanavn from "../Assets/Logos/Firmanavn.png";
 import projects from "../Data/ProjectData";
 const defaultAvatar =
@@ -29,6 +30,25 @@ const Entreprenør = () => {
 						src={firmanavn}
 						alt="Ivar Nilsen Entreprenør AS"
 					/>
+				</div>
+
+				<div id="jubileum">
+					<div id="jubileumsContainer">
+						<div id="jubileumsBildeContainer">
+							<img
+								src={jubileumsikon}
+								id="jubileumsBilde"
+								alt="Illustrerende bilde av firmaet"
+							/>
+						</div>
+						<div id="jubileumsTekst">
+							<h5>
+								Ivar Nilsen Entreprenør AS fyller 25 år i år! Vi ønsker å takke
+								alle kunder og sammarbeidspartnere opp gjennom årene som har
+								gått, og ser frem til videre sammarbeid.
+							</h5>
+						</div>
+					</div>
 				</div>
 
 				<div id="tjenesterEntreprenør">
@@ -186,7 +206,6 @@ const Entreprenør = () => {
 						</div>
 						<div id="omOssTekst">
 							<h5>
-								{" "}
 								Ivar Nilsen Entreprenør AS ble etablert av Ivar Nilsen en vårdag
 								i 1996. Vi er et mindre entreprenørfirma som holder til i Moss.
 								Litt forhistorie følger. Ivar er sønn av Sverre Johannes Nilsen
