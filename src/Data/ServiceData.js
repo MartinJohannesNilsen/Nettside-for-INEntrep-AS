@@ -2,7 +2,7 @@ export default [
 	{
 		title: "Graving/planering",
 		text:
-			"Alt av utgraving til byggefelt, bolighus, industribygg, garasjeanlegg, veier og p-plasser, samt grøfter og stikkledninger. planering til hager og klargjøring til bed og ferdigplen.",
+			"Alt av utgraving til byggefelt, bolighus, industribygg, garasjeanlegg, veier og p-plasser, samt grøfter og stikkledninger. Planering til hager og klargjøring til bed og ferdigplen.",
 		images: [
 			{
 				text:
@@ -59,7 +59,7 @@ export default [
 				height: 1,
 			},
 			{
-				text: "planering rundt hus, Festeveien 9, Moss.",
+				text: "Planering rundt hus, Festeveien 9, Moss.",
 				src:
 					"https://firebasestorage.googleapis.com/v0/b/ivarnilsenentreprenoras.appspot.com/o/Tjenester%2FGraving%2F02.JPG?alt=media&token=da27fba7-3f46-4c7c-b8fb-d38b729d221b",
 				alt: "Ivar Nilsen Entreprenør AS",
@@ -67,7 +67,7 @@ export default [
 				height: 1,
 			},
 			{
-				text: "planering rundt hus, Festeveien 9, Moss.",
+				text: "Planering rundt hus, Festeveien 9, Moss.",
 				src:
 					"https://firebasestorage.googleapis.com/v0/b/ivarnilsenentreprenoras.appspot.com/o/Tjenester%2FGraving%2F05.JPG?alt=media&token=af04253e-cbfb-4eb6-8c76-ef5c59ad056e",
 				alt: "Ivar Nilsen Entreprenør AS",
