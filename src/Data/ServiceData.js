@@ -1,12 +1,12 @@
 export default [
 	{
-		title: "Graving/Plannering",
+		title: "Graving/planering",
 		text:
-			"Alt av utgraving til byggefelt, bolighus, industribygg, garasjeanlegg, veier og p-plasser, samt grøfter og stikkledninger. Plannering til hager og klargjøring til jord og ferdigplen.",
+			"Alt av utgraving til byggefelt, bolighus, industribygg, garasjeanlegg, veier og p-plasser, samt grøfter og stikkledninger. planering til hager og klargjøring til bed og ferdigplen.",
 		images: [
 			{
 				text:
-					"Graving og plannering for p-plass og garasjeanlegg, Østre Øre, Moss.",
+					"Graving og planering for p-plass og garasjeanlegg, Østre Øre, Moss.",
 				src:
 					"https://firebasestorage.googleapis.com/v0/b/ivarnilsenentreprenoras.appspot.com/o/Tjenester%2FGraving%2F08.JPG?alt=media&token=7e90c032-8388-4087-b8c2-2aaa2e62bfcf",
 				alt: "Ivar Nilsen Entreprenør AS",
@@ -15,7 +15,7 @@ export default [
 			},
 			{
 				text:
-					"Graving og plannering for p-plass og garasjeanlegg, Østre Øre, Moss.",
+					"Graving og planering for p-plass og garasjeanlegg, Østre Øre, Moss.",
 				src:
 					"https://firebasestorage.googleapis.com/v0/b/ivarnilsenentreprenoras.appspot.com/o/Tjenester%2FGraving%2F15.JPG?alt=media&token=64ab57d9-5488-472c-b626-c2cdfd1e82eb",
 				alt: "Ivar Nilsen Entreprenør AS",
@@ -24,7 +24,7 @@ export default [
 			},
 			{
 				text:
-					"Graving og plannering for p-plass og garasjeanlegg, Østre Øre, Moss.",
+					"Graving og planering for p-plass og garasjeanlegg, Østre Øre, Moss.",
 				src:
 					"https://firebasestorage.googleapis.com/v0/b/ivarnilsenentreprenoras.appspot.com/o/Tjenester%2FGraving%2F23.JPG?alt=media&token=1d1f6ed9-9682-42b5-9f3c-c30e2e8fbbda",
 				alt: "Ivar Nilsen Entreprenør AS",
@@ -33,7 +33,7 @@ export default [
 			},
 			{
 				text:
-					"Graving og plannering for p-plass og garasjeanlegg, Østre Øre, Moss.",
+					"Graving og planering for p-plass og garasjeanlegg, Østre Øre, Moss.",
 				src:
 					"https://firebasestorage.googleapis.com/v0/b/ivarnilsenentreprenoras.appspot.com/o/Tjenester%2FGraving%2F24.JPG?alt=media&token=b7fbe55e-6f37-4601-8d68-d902af9ac116",
 				alt: "Ivar Nilsen Entreprenør AS",
@@ -42,7 +42,7 @@ export default [
 			},
 			{
 				text:
-					"Graving og plannering for p-plass og garasjeanlegg, Østre Øre, Moss.",
+					"Graving og planering for p-plass og garasjeanlegg, Østre Øre, Moss.",
 				src:
 					"https://firebasestorage.googleapis.com/v0/b/ivarnilsenentreprenoras.appspot.com/o/Tjenester%2FGraving%2F27.JPG?alt=media&token=e7684978-fc88-4269-b99e-6c12d622d9eb",
 				alt: "Ivar Nilsen Entreprenør AS",
@@ -51,7 +51,7 @@ export default [
 			},
 			{
 				text:
-					"Graving og plannering for p-plass og garasjeanlegg, Østre Øre, Moss.",
+					"Graving og planering for p-plass og garasjeanlegg, Østre Øre, Moss.",
 				src:
 					"https://firebasestorage.googleapis.com/v0/b/ivarnilsenentreprenoras.appspot.com/o/Tjenester%2FGraving%2F32.JPG?alt=media&token=208e3c0e-e72b-49e7-bffe-e007b9e652f3",
 				alt: "Ivar Nilsen Entreprenør AS",
@@ -59,7 +59,7 @@ export default [
 				height: 1,
 			},
 			{
-				text: "Plannering rundt hus, Festeveien 9, Moss.",
+				text: "planering rundt hus, Festeveien 9, Moss.",
 				src:
 					"https://firebasestorage.googleapis.com/v0/b/ivarnilsenentreprenoras.appspot.com/o/Tjenester%2FGraving%2F02.JPG?alt=media&token=da27fba7-3f46-4c7c-b8fb-d38b729d221b",
 				alt: "Ivar Nilsen Entreprenør AS",
@@ -67,7 +67,7 @@ export default [
 				height: 1,
 			},
 			{
-				text: "Plannering rundt hus, Festeveien 9, Moss.",
+				text: "planering rundt hus, Festeveien 9, Moss.",
 				src:
 					"https://firebasestorage.googleapis.com/v0/b/ivarnilsenentreprenoras.appspot.com/o/Tjenester%2FGraving%2F05.JPG?alt=media&token=af04253e-cbfb-4eb6-8c76-ef5c59ad056e",
 				alt: "Ivar Nilsen Entreprenør AS",
@@ -79,7 +79,7 @@ export default [
 	{
 		title: "Riving",
 		text:
-			"Riving og sortering av bolighus. Rivingsmateriale leveres til godkjent deponi. ",
+			"Riving og sortering av bolighus/industribygg. Rivingsmateriale leveres til godkjent deponi. ",
 		images: [
 			{
 				text: "Riving av Rygge kro.",
@@ -559,7 +559,7 @@ export default [
 	},
 	{
 		title: "Grøntanlegg: Krittheller",
-		text: "Legging av store krittheller. Finnes i mindre størrelse.",
+		text: "Legging av store krittheller 60x60. Finnes i mindre størrelser.",
 		images: [
 			{
 				text: "Klargjøring til heller, Svaleveien 6, Jeløy.",

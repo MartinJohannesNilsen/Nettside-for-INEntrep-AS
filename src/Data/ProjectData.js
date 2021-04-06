@@ -11,7 +11,7 @@ export default [
 	{
 		title: "Sollilunden BRL garasjeanlegg",
 		description:
-			"Rivning av 77 garasjer og grunnarbeider for 74 nye, samt opparbeidelse av p-plasser og søppelcontainere. Prosjektet er i sammarbeid med Mesterbygg Moss AS for Vansjø Boligbyggelag.",
+			"Rivning av 77 garasjer og grunnarbeider for 74 nye, samt opparbeidelse av p-plasser og søppelcontainere. Prosjektet er i samarbeid med Mesterbygg Moss AS for Vansjø Boligbyggelag.",
 		url:
 			"https://firebasestorage.googleapis.com/v0/b/ivarnilsenentreprenoras.appspot.com/o/Prosjekter%2FSollilunden_BRL_garasjeanlegg.JPG?alt=media&token=d2095190-c6e8-4909-afdf-5b92ba298337",
 		alt:

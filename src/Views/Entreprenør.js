@@ -44,8 +44,8 @@ const Entreprenør = () => {
 						<div id="jubileumsTekst">
 							<h5>
 								Ivar Nilsen Entreprenør AS fyller 25 år i år! Vi ønsker å takke
-								alle kunder og sammarbeidspartnere opp gjennom årene som har
-								gått, og ser frem til videre sammarbeid.
+								alle våre kunder og samarbeidspartnere opp gjennom årene, og ser
+								frem til videre samarbeid.
 							</h5>
 						</div>
 					</div>
