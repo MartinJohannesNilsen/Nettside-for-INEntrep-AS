@@ -11,7 +11,6 @@ const App = () => {
 		<BrowserRouter class = "website">
             <Switch>
                 <Route exact path="/" component={Entreprenør} />
-                <Route exact path="/entreprenør" component={Entreprenør} />
                 {/* <Route exact path="/eiendom" component={Eiendom} /> */}
                 <Route exact path="/tjenester" component={Tjenester} />
                 <Route exact path="/kontakt" component={Kontakt} />
