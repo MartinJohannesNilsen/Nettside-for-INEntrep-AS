@@ -27,7 +27,7 @@ const Tjenester = () => {
 				</div>
 				<div id="tjenesterInfo">
 					<p id="tjenesterTekst">
-						Her kan du lese om de tjenestene vi tilbyr. I løpet av de siste
+						{"Her kan du lese om de tjenestene vi tilbyr. I løpet av de siste "}
 						{new Date().getFullYear() - 1996} årene har vi utført et godt stykke
 						arbeid rundt om på Østlandet. På denne siden ønsker vi å forklare
 						litt hva det er vi gjør, og vise noen referansebilder av tidligere
