@@ -43,7 +43,7 @@ const Entreprenør = () => {
 						</div>
 						<div id="jubileumsTekst">
 							<h5>
-								Ivar Nilsen Entreprenør AS fyller 25 år i år! Vi ønsker å takke
+								Ivar Nilsen Entreprenør AS fylte 25 år i 2021! Vi ønsker å takke
 								alle våre kunder og samarbeidspartnere opp gjennom årene, og ser
 								frem til videre samarbeid.
 							</h5>
@@ -148,45 +148,50 @@ const Entreprenør = () => {
 						<hr id="ansatteTittelUnderstrek" />
 					</div>
 					<div id="ansatteCards">
-						<div className="ansattCard" id="ansattCard1">
+						<div className="ansattCard">
 							<img src={defaultAvatar} alt="Portrett av ansatt" />
 							<h5>Ivar Nilsen</h5>
 							<p>Daglig leder</p>
 						</div>
-						<div className="ansattCard" id="ansattCard6">
+						<div className="ansattCard">
 							<img src={defaultAvatar} alt="Portrett av ansatt" />
 							<h5>Geir Viken</h5>
 							<p>Prosjektleder</p>
 						</div>
-						<div className="ansattCard" id="ansattCard2">
+						<div className="ansattCard">
 							<img src={defaultAvatar} alt="Portrett av ansatt" />
 							<h5>Merete Monsen</h5>
 							<p>Kontoransvarlig</p>
 						</div>
-						<div className="ansattCard" id="ansattCard3">
+						<div className="ansattCard">
 							<img src={defaultAvatar} alt="Portrett av ansatt" />
 							<h5>David V. Andersen</h5>
 							<p>Anleggsmaskinfører</p>
 						</div>
-						<div className="ansattCard" id="ansattCard6">
+						<div className="ansattCard">
 							<img src={defaultAvatar} alt="Portrett av ansatt" />
-							<h5>Runar Star</h5>
-							<p>Lastebilsjåfør</p>
+							<h5>Piotr Baworowski</h5>
+							<p>Grunnarbeider</p>
 						</div>
-						<div className="ansattCard" id="ansattCard6">
-							<img src={defaultAvatar} alt="Portrett av ansatt" />
-							<h5>Fredrik Falkenberg</h5>
-							<p>Lastebilsjåfør</p>
-						</div>
-						<div className="ansattCard" id="ansattCard5">
+						<div className="ansattCard">
 							<img src={defaultAvatar} alt="Portrett av ansatt" />
 							<h5>André Johansen</h5>
 							<p>Rørlegger/Grunnarbeider</p>
 						</div>
-						<div className="ansattCard" id="ansattCard4">
+						<div className="ansattCard">
 							<img src={defaultAvatar} alt="Portrett av ansatt" />
-							<h5>Piotr Baworowski</h5>
-							<p>Grunnarbeider</p>
+							<h5>Paul Sørgård</h5>
+							<p>Anleggsmaskinfører</p>
+						</div>
+						<div className="ansattCard">
+							<img src={defaultAvatar} alt="Portrett av ansatt" />
+							<h5>Runar Star</h5>
+							<p>Lastebilsjåfør</p>
+						</div>
+						<div className="ansattCard">
+							<img src={defaultAvatar} alt="Portrett av ansatt" />
+							<h5>Fredrik Falkenberg</h5>
+							<p>Lastebilsjåfør</p>
 						</div>
 					</div>
 				</div>

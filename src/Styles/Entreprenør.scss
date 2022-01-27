@@ -1,318 +1,318 @@
 @import "colors";
 
 #EntreprenørContainer {
-	padding-top: 70px;
-	background-color: white;
+  padding-top: 70px;
+  background-color: white;
 }
 
 .introText {
-	text-align: center;
-	padding: 15px 0 15px 0;
-	background-color: white;
+  text-align: center;
+  padding: 15px 0 15px 0;
+  background-color: white;
 }
 #introTextImg {
-	width: 40%;
+  width: 40%;
 }
 #tjenesterEntreprenør {
-	padding: 40px 10% 40px 10%;
-	background-color: $yellow;
+  padding: 40px 10% 40px 10%;
+  background-color: $yellow;
 }
 #tjenesteboks {
-	background-color: white;
+  background-color: white;
 }
 #tjenesterEntreprenørLogo {
-	height: 100%;
-	width: 100%;
+  height: 100%;
+  width: 100%;
 }
 #tjenesterEntreprenørContainer {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-areas: "hvemErVi tjenesterEntreprenør bilde";
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "hvemErVi tjenesterEntreprenør bilde";
 }
 #tjenesterEntreprenørFørsteBoks {
-	grid-area: hvemErVi;
-	padding: 20px;
+  grid-area: hvemErVi;
+  padding: 20px;
 }
 #tjenesterEntreprenørAndreBoks {
-	grid-area: tjenesterEntreprenør;
-	padding: 20px;
+  grid-area: tjenesterEntreprenør;
+  padding: 20px;
 }
 #tjenesterEntreprenørAndreBoks ul {
-	/*list-style-type: square;*/
-	list-style-type: circle;
+  /*list-style-type: square;*/
+  list-style-type: circle;
 }
 // .list{
 //     list-style-image: url('../Assets/Icons/checkmark.svg');
 // }
 #tjenesterEntreprenørEntreprenørButton {
-	margin: auto;
+  margin: auto;
 }
 #tjenesterEntreprenørTredjeBoks {
-	grid-area: bilde;
-	padding: 20px;
-	text-align: center;
-	vertical-align: middle;
-	margin: auto auto auto auto;
+  grid-area: bilde;
+  padding: 20px;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto auto auto auto;
 }
 
 #prosjekter {
-	background-color: rgb(50, 55, 61);
-	text-align: center;
+  background-color: rgb(50, 55, 61);
+  text-align: center;
 }
 #prosjekterTittel h3 {
-	color: white;
-	padding: 20px 20px 0px 20px;
+  color: white;
+  padding: 20px 20px 0px 20px;
 }
 #prosjekterTittelUnderstrek {
-	width: 5%;
-	height: 3px;
-	background-color: $yellow;
+  width: 5%;
+  height: 3px;
+  background-color: $yellow;
 }
 .prosjekterShowCards {
-	width: 80%;
-	padding: 10px 20px 30px 20px;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-areas: "showCard1 showCard2";
-	margin: auto;
+  width: 80%;
+  padding: 10px 20px 30px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "showCard1 showCard2";
+  margin: auto;
 }
 
 #prosjekterShowCardImg {
-	height: 200px;
+  height: 200px;
 }
 #prosjekterShowCard1 {
-	width: 60%;
-	margin: 10px 30px 30px auto;
-	grid-area: showCard1;
+  width: 60%;
+  margin: 10px 30px 30px auto;
+  grid-area: showCard1;
 }
 #prosjekterShowCard2 {
-	width: 60%;
-	margin: 10px auto 30px 30px;
-	grid-area: showCard2;
+  width: 60%;
+  margin: 10px auto 30px 30px;
+  grid-area: showCard2;
 }
 
 #ansatte {
-	// background-color: rgb(232, 202, 82);
-	background-color: $yellow;
-	text-align: center;
+  // background-color: rgb(232, 202, 82);
+  background-color: $yellow;
+  text-align: center;
 }
 #ansatteTittel h3 {
-	color: black;
-	padding: 20px 20px 0px 20px;
+  color: black;
+  padding: 20px 20px 0px 20px;
 }
 #ansatteTittelUnderstrek {
-	width: 4%;
-	height: 3px;
-	background-color: rgb(50, 55, 61);
+  width: 4%;
+  height: 3px;
+  background-color: rgb(50, 55, 61);
 }
 #ansatte img {
-	border-radius: 50%;
-	height: 50%;
-	width: 50%;
-	margin-bottom: 10px;
+  border-radius: 50%;
+  height: 50%;
+  width: 50%;
+  margin-bottom: 10px;
 }
 #ansatteCards {
-	width: 55%;
-	padding: 40px;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	margin: 0 auto 0 auto;
+  width: 55%;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto 0 auto;
 }
 .ansattCard {
-	margin: 10px auto 10px auto;
+  margin: 10px auto 10px auto;
 }
 
 #omOss {
-	background-color: rgb(50, 55, 61);
-	text-align: center;
+  background-color: rgb(50, 55, 61);
+  text-align: center;
 }
 #omOssTittel h3 {
-	color: white;
-	padding: 20px 20px 0px 20px;
+  color: white;
+  padding: 20px 20px 0px 20px;
 }
 #omOssTittelUnderstrek {
-	width: 5%;
-	height: 3px;
-	background-color: rgb(232, 202, 82);
+  width: 5%;
+  height: 3px;
+  background-color: rgb(232, 202, 82);
 }
 #omOssContainer {
-	width: 80%;
-	vertical-align: center;
-	margin: auto;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-areas: "bilde tekst";
-	padding: 10px 0 50px 0;
+  width: 80%;
+  vertical-align: center;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "bilde tekst";
+  padding: 10px 0 50px 0;
 }
 #omOssBilde {
-	grid-area: bilde;
-	width: 80%;
-	margin: auto;
-	padding: 20px;
+  grid-area: bilde;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
 }
 #omOssTekst h5 {
-	font-weight: 200;
+  font-weight: 200;
 }
 #omOssTekst {
-	grid-area: tekst;
-	color: white;
-	padding: 20px;
-	margin: auto;
-	font-style: italic;
+  grid-area: tekst;
+  color: white;
+  padding: 20px;
+  margin: auto;
+  font-style: italic;
 }
 #omOssTekst a {
-	margin-top: 10px;
+  margin-top: 10px;
 }
 
 #jubileum {
-	background-color: rgb(50, 55, 61);
-	text-align: center;
+  background-color: rgb(50, 55, 61);
+  text-align: center;
 }
 #jubileumsTittel h3 {
-	color: white;
-	padding: 20px 20px 0px 20px;
+  color: white;
+  padding: 20px 20px 0px 20px;
 }
 #jubileumsTittelUnderstrek {
-	width: 5%;
-	height: 3px;
-	background-color: rgb(232, 202, 82);
+  width: 5%;
+  height: 3px;
+  background-color: rgb(232, 202, 82);
 }
 #jubileumsContainer {
-	width: 80%;
-	vertical-align: center;
-	margin: auto;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-areas: "bilde tekst";
-	padding: 20px 0 20px 0;
+  width: 80%;
+  vertical-align: center;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "bilde tekst";
+  padding: 20px 0 20px 0;
 }
 // #jubileumsBildeContainer {
 // 	text-align: right;
 // }
 #jubileumsBilde {
-	grid-area: bilde;
-	width: 40%;
-	// margin: 0 10% 0 0;
-	padding: 20px;
+  grid-area: bilde;
+  width: 40%;
+  // margin: 0 10% 0 0;
+  padding: 20px;
 }
 #jubileumsTekst h5 {
-	font-weight: 200;
+  font-weight: 200;
 }
 #jubileumsTekst {
-	grid-area: tekst;
-	color: white;
-	padding: 20px;
-	margin: auto;
-	font-style: italic;
+  grid-area: tekst;
+  color: white;
+  padding: 20px;
+  margin: auto;
+  font-style: italic;
 }
 #jubileumsTekst a {
-	margin-top: 10px;
+  margin-top: 10px;
 }
 
 // @media screen and (max-width: 1000px){}
 @media screen and (max-width: 1400px) {
-	#omOssContainer,
-	#jubileumsContainer {
-		width: 80%;
-		margin: auto;
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-areas:
-			"bilde"
-			"tekst";
-		padding: 10px 0 20px 0;
-	}
+  #omOssContainer,
+  #jubileumsContainer {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "bilde"
+      "tekst";
+    padding: 10px 0 20px 0;
+  }
 }
 
 @media only screen and (max-width: 1400px) {
-	#tjenesterEntreprenørContainer {
-		grid-template-columns: 1fr 1fr;
-		margin: 20px;
-		display: grid;
-		grid-template-areas:
-			"hvemErVi bilde"
-			"tjenesterEntreprenør bilde";
-	}
-	#tjenesterEntreprenørLogo {
-		height: 80%;
-		width: 80%;
-	}
+  #tjenesterEntreprenørContainer {
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+    display: grid;
+    grid-template-areas:
+      "hvemErVi bilde"
+      "tjenesterEntreprenør bilde";
+  }
+  #tjenesterEntreprenørLogo {
+    height: 80%;
+    width: 80%;
+  }
 
-	#ansatteCards {
-		width: 80%;
-	}
+  #ansatteCards {
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
-	#introTextImg {
-		width: 90%;
-	}
+  #introTextImg {
+    width: 90%;
+  }
 
-	#tjenesterEntreprenørContainer {
-		grid-template-columns: 1fr;
-		margin: 0px;
-		display: grid;
-		grid-template-areas:
-			"hvemErVi"
-			"tjenesterEntreprenør"
-			"bilde";
-	}
+  #tjenesterEntreprenørContainer {
+    grid-template-columns: 1fr;
+    margin: 0px;
+    display: grid;
+    grid-template-areas:
+      "hvemErVi"
+      "tjenesterEntreprenør"
+      "bilde";
+  }
 
-	.prosjekterShowCards {
-		width: 60%;
-		grid-template-columns: 1fr;
-		grid-template-areas:
-			"showCard1"
-			"showCard2";
-	}
-	#prosjekterShowCard1 {
-		width: 80%;
-		margin: 20px auto 20px auto;
-		grid-area: showCard1;
-	}
-	#prosjekterShowCard2 {
-		width: 80%;
-		margin: 20px auto 20px auto;
-		grid-area: showCard2;
-	}
-	#prosjekterTittelUnderstrek {
-		width: 22%;
-	}
+  .prosjekterShowCards {
+    width: 60%;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "showCard1"
+      "showCard2";
+  }
+  #prosjekterShowCard1 {
+    width: 80%;
+    margin: 20px auto 20px auto;
+    grid-area: showCard1;
+  }
+  #prosjekterShowCard2 {
+    width: 80%;
+    margin: 20px auto 20px auto;
+    grid-area: showCard2;
+  }
+  #prosjekterTittelUnderstrek {
+    width: 22%;
+  }
 
-	#ansatteTittelUnderstrek {
-		width: 18%;
-	}
-	#ansatteCards {
-		width: 100%;
-		padding: 20px;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		margin: 0 auto 0 auto;
-	}
-	.ansattCard {
-		margin: auto auto auto auto;
-	}
+  #ansatteTittelUnderstrek {
+    width: 18%;
+  }
+  #ansatteCards {
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto 0 auto;
+  }
+  .ansattCard {
+    margin: auto auto auto auto;
+  }
 
-	#omOssTittelUnderstrek {
-		width: 22%;
-	}
-	#omOssContainer {
-		width: 80%;
-		margin: auto;
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-areas:
-			"bilde"
-			"tekst";
-		padding: 10px 0 20px 0;
-	}
-	#omOssTekst {
-		margin-top: 0px;
-	}
+  #omOssTittelUnderstrek {
+    width: 22%;
+  }
+  #omOssContainer {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "bilde"
+      "tekst";
+    padding: 10px 0 20px 0;
+  }
+  #omOssTekst {
+    margin-top: 0px;
+  }
 }
 
 @media only screen and (max-width: 700px) {
-	.prosjekterShowCards {
-		width: 90%;
-	}
+  .prosjekterShowCards {
+    width: 90%;
+  }
 }
