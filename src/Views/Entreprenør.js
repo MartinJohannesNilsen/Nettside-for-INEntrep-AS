@@ -8,9 +8,8 @@ import logoTransparentSort from "../Assets/Logos/IN-Logo-sort.png";
 import logoTransparentHvit from "../Assets/Logos/IN-Logo-hvit.png";
 import jubileumsikon from "../Assets/Icons/Jubileumsikon.svg";
 import firmanavn from "../Assets/Logos/Firmanavn.png";
-import projects from "../Data/ProjectData";
-const defaultAvatar =
-	"https://firebasestorage.googleapis.com/v0/b/ivarnilsenentreprenoras.appspot.com/o/Default%2FDefaultAvatar2.jpg?alt=media&token=182fc213-f6ce-4c48-b664-48035eed1a88";
+import {recentProjects, previousProjects} from "../Data/ProjectData";
+const defaultAvatar = "https://firebasestorage.googleapis.com/v0/b/ivarnilsenentreprenoras.appspot.com/o/Default%2FDefaultAvatar2.jpg?alt=media&token=182fc213-f6ce-4c48-b664-48035eed1a88";
 
 const Entreprenør = () => {
 	useEffect(() => {
@@ -115,12 +114,17 @@ const Entreprenør = () => {
 
 				<div id="prosjekter">
 					<div id="prosjekterTittel">
-						<h3>Større prosjekter</h3>
+						<h3>Fremhevede prosjekter</h3>
 						<hr id="prosjekterTittelUnderstrek" />
 					</div>
-
-					<div className="prosjekterShowCards">
-						{projects.map((project, index) => (
+					
+					{/* UnderSeksjon */}
+					<br/>
+					<div id="prosjekterTittel">
+						<h4>Nåværende</h4>
+					</div>
+					<div className="prosjekterShowCards3">
+						{recentProjects.map((project, index) => (
 							<div
 								className="card"
 								id={"prosjekterShowCard" + (index + 1)}
@@ -129,7 +133,34 @@ const Entreprenør = () => {
 								<img
 									className="card-img-top"
 									id="prosjekterShowCardImg"
-									src={project.url}
+									src={project.img_path}
+									alt={project.alt}
+								/>
+								<div className="card-body">
+									<h5 className="card-title">{project.title}</h5>
+									<p className="card-text">{project.description}</p>
+									{/* <a href="/prosjekt/1" className="btn btn-dark btn-sm">Les mer</a> */}
+								</div>
+							</div>
+						))}
+					</div>
+
+					{/* UnderSeksjon */}
+					<br />
+					<div id="prosjekterTittel">
+						<h4>Ferdigstilte</h4>
+					</div>
+					<div className="prosjekterShowCards2">
+						{previousProjects.map((project, index) => (
+							<div
+								className="card"
+								id={"prosjekterShowCard" + (index + 1)}
+								key={project.alt}
+							>
+								<img
+									className="card-img-top"
+									id="prosjekterShowCardImg"
+									src={project.img_path}
 									alt={project.alt}
 								/>
 								<div className="card-body">

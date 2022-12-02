@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from "react";
 import "../Styles/Prosjekt.scss";
-import Footer from '../Components/Footer'
-import Navbar from '../Components/Navbar'
-import FeilSide from '../Views/FeilSide'
+import Footer from '../../Components/Footer'
+import Navbar from '../../Components/Navbar'
+import FeilSide from '../FeilSide'
 const defaultImage = "https://firebasestorage.googleapis.com/v0/b/ivarnilsenentreprenoras.appspot.com/o/Default%2FdefaultImage.png?alt=media&token=19f06542-79c4-45b5-92f1-64a17bc31c24"
 
 let prosjekter = [

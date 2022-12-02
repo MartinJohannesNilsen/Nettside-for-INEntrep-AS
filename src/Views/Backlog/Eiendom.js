@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import "../Styles/Eiendom.scss";
-import Footer from '../Components/Footer'
-import Navbar from '../Components/Navbar'
+import Footer from '../../Components/Footer'
+import Navbar from '../../Components/Navbar'
 
 const defaultImage = "https://firebasestorage.googleapis.com/v0/b/ivarnilsenentreprenoras.appspot.com/o/Default%2FdefaultImage.png?alt=media&token=19f06542-79c4-45b5-92f1-64a17bc31c24"
 const dillingtoppen = "https://firebasestorage.googleapis.com/v0/b/ivarnilsenentreprenoras.appspot.com/o/Eiendom%2Fdillingtoppen.jpg?alt=media&token=40599a96-b485-4d1f-a678-c95eee101325"
