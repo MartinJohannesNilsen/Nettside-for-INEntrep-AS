@@ -1,8 +1,7 @@
-import React, { useEffect } from "react";
-import $ from "jquery";
+import React, { useEffect, useRef } from "react";
 import "../Styles/Entreprenør.scss";
 import Navbar from "../Components/Navbar";
-import Carousel from "../Components/Carousel";
+import ImageCarousel from "../Components/Carousel";
 import Footer from "../Components/Footer";
 import logoTransparentSort from "../Assets/Logos/IN-Logo-sort.png";
 import logoTransparentHvit from "../Assets/Logos/IN-Logo-hvit.png";
@@ -12,15 +11,18 @@ import {recentProjects, previousProjects} from "../Data/ProjectData";
 const defaultAvatar = "https://firebasestorage.googleapis.com/v0/b/ivarnilsenentreprenoras.appspot.com/o/Default%2FDefaultAvatar2.jpg?alt=media&token=182fc213-f6ce-4c48-b664-48035eed1a88";
 
 const Entreprenør = () => {
+	const omOssRef = useRef(null);
+	
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
+
 	return (
 		<div>
 			<Navbar />
 			<div id="EntreprenørContainer">
 				<div>
-					<Carousel />
+					<ImageCarousel />
 				</div>
 
 				<div className="introText">
@@ -67,10 +69,7 @@ const Entreprenør = () => {
 									className="btn btn-outline-dark btn-sm"
 									id="tjenesterEntreprenørEntreprenørButton"
 									onClick={() => {
-										$("html, body").animate(
-											{ scrollTop: $("#omOss").offset().top + 1 },
-											2000
-										);
+										omOssRef.current.scrollIntoView({ behavior: "smooth" });
 									}}
 								>
 									Les mer
@@ -123,7 +122,7 @@ const Entreprenør = () => {
 					<div id="prosjekterTittel">
 						<h4>Nåværende</h4>
 					</div>
-					<div className="prosjekterShowCards3">
+					{/* <div className="prosjekterShowCards3">
 						{recentProjects.map((project, index) => (
 							<div
 								className="card"
@@ -145,8 +144,8 @@ const Entreprenør = () => {
 					</div> */}
 
 					{/* UnderSeksjon */}
-					<br />
-					{/* <div id="prosjekterTittel">
+					{/* <br />
+					<div id="prosjekterTittel">
 						<h4>Ferdigstilte</h4>
 					</div> */}
 					<div className="prosjekterShowCards2">
@@ -201,7 +200,7 @@ const Entreprenør = () => {
 					</div>
 				</div>
 
-				<div id="omOss">
+				<div id="omOss" ref={omOssRef}>
 					<div id="omOssTittel">
 						<h3>Kort om oss</h3>
 						<hr id="omOssTittelUnderstrek" />

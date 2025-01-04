@@ -1,11 +1,10 @@
 import React from 'react';
 import '../Styles/ToTop.scss';
-import $ from 'jquery';
 
-const ToTop = ()  => {
+const ToTop = ({ topRef }) => {
     return (
         <div id="toTopButton">
-            <button type="button" className="btn btn-outline-dark btn-light" onClick={() => {$('html, body').animate({scrollTop: '0'}, 2000);}}>➔</button>
+            <button type="button" className="btn btn-outline-dark btn-light" onClick={() => topRef.current.scrollIntoView({ behavior: 'smooth' })}>➔</button>
         </div>
     );
 }
