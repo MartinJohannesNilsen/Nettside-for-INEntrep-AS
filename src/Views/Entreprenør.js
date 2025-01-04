@@ -119,7 +119,7 @@ const Entreprenør = () => {
 					</div>
 					
 					{/* UnderSeksjon */}
-					<br/>
+					{/* <br/>
 					<div id="prosjekterTittel">
 						<h4>Nåværende</h4>
 					</div>
@@ -139,17 +139,16 @@ const Entreprenør = () => {
 								<div className="card-body">
 									<h5 className="card-title">{project.title}</h5>
 									<p className="card-text">{project.description}</p>
-									{/* <a href="/prosjekt/1" className="btn btn-dark btn-sm">Les mer</a> */}
 								</div>
 							</div>
 						))}
-					</div>
+					</div> */}
 
 					{/* UnderSeksjon */}
 					<br />
-					<div id="prosjekterTittel">
+					{/* <div id="prosjekterTittel">
 						<h4>Ferdigstilte</h4>
-					</div>
+					</div> */}
 					<div className="prosjekterShowCards2">
 						{previousProjects.map((project, index) => (
 							<div
@@ -186,33 +185,8 @@ const Entreprenør = () => {
 						</div>
 						<div className="ansattCard">
 							<img src={defaultAvatar} alt="Portrett av ansatt" />
-							<h5>Geir Viken</h5>
-							<p>Prosjektleder</p>
-						</div>
-						<div className="ansattCard">
-							<img src={defaultAvatar} alt="Portrett av ansatt" />
 							<h5>Merete Monsen</h5>
 							<p>Kontoransvarlig</p>
-						</div>
-						<div className="ansattCard">
-							<img src={defaultAvatar} alt="Portrett av ansatt" />
-							<h5>David V. Andersen</h5>
-							<p>Anleggsmaskinfører</p>
-						</div>
-						<div className="ansattCard">
-							<img src={defaultAvatar} alt="Portrett av ansatt" />
-							<h5>Piotr Baworowski</h5>
-							<p>Grunnarbeider</p>
-						</div>
-						<div className="ansattCard">
-							<img src={defaultAvatar} alt="Portrett av ansatt" />
-							<h5>André Johansen</h5>
-							<p>Rørlegger/Grunnarbeider</p>
-						</div>
-						<div className="ansattCard">
-							<img src={defaultAvatar} alt="Portrett av ansatt" />
-							<h5>Paul Sørgård</h5>
-							<p>Anleggsmaskinfører</p>
 						</div>
 						<div className="ansattCard">
 							<img src={defaultAvatar} alt="Portrett av ansatt" />

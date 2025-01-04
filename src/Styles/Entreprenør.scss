@@ -145,7 +145,7 @@
   width: 55%;
   padding: 40px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 0 auto 0 auto;
 }
 .ansattCard {
@@ -273,6 +273,7 @@
   }
 }
 
+
 @media only screen and (max-width: 1000px) {
   #introTextImg {
     width: 90%;
@@ -339,16 +340,6 @@
   #ansatteTittelUnderstrek {
     width: 18%;
   }
-  #ansatteCards {
-    width: 100%;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 0 auto 0 auto;
-  }
-  .ansattCard {
-    margin: auto auto auto auto;
-  }
 
   #omOssTittelUnderstrek {
     width: 22%;
@@ -366,6 +357,12 @@
   #omOssTekst {
     margin-top: 0px;
   }
+
+  #ansatteCards {
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding: 20px 10px;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -374,5 +371,16 @@
   }
   .prosjekterShowCards3 {
     width: 90%;
+  }
+
+  #ansatteCards {
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto 0 auto;
+  }
+  .ansattCard {
+    margin: auto auto auto auto;
   }
 }

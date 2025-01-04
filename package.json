@@ -1,44 +1,39 @@
 {
-	"name": "inentrep",
-	"version": "1.0.0",
-	"private": true,
-	"homepage": "https://ivar-nilsen.no",
-	"scripts": {
-		"start": "react-scripts start",
-		"build": "react-scripts build",
-		"test": "react-scripts test",
-		"eject": "react-scripts eject",
-		"deploy": "npm run build && firebase deploy"
-	},
-	"dependencies": {
-		"bootstrap": "^4.5.3",
-		"jquery": "^3.5.1",
-		"react": "^16.14.0",
-		"react-dom": "^16.14.0",
-		"react-images": "^1.1.7",
-		"react-photo-gallery": "^8.0.0",
-		"react-router-dom": "^5.2.0",
-		"react-scripts": "^3.4.4"
-	},
-	"devDependencies": {
-		"@testing-library/jest-dom": "^4.2.4",
-		"@testing-library/react": "^9.5.0",
-		"@testing-library/user-event": "^7.1.2",
-		"sass": "^1.45.0"
-	},
-	"eslintConfig": {
-		"extends": "react-app"
-	},
-	"browserslist": {
-		"production": [
-			">0.2%",
-			"not dead",
-			"not op_mini all"
-		],
-		"development": [
-			"last 1 chrome version",
-			"last 1 firefox version",
-			"last 1 safari version"
-		]
-	}
+  "name": "inentrep",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://ivar-nilsen.no",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && firebase deploy"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-images": "^1.1.7",
+    "react-photo-gallery": "^8.0.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^5.0.1",
+    "sass": "^1.45.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
